@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import './App.css'
-import mercadona from './componentes/mercadona'
-
-
+import './App.css';
+import Carritodelmercado from './components/carritodelmercado';
 
 function App() {
   return (
     <>
-    <mercadona/>
-
+      <div>
+        <Carritodelmercado />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
