@@ -1,13 +1,17 @@
 import './App.css';
-import Carritodelmercado from './components/carritodelmercado';
+import Mercadona from './components/mercadona';
+import { Provider } from 'react-redux';
+import store from './store';
+//import Carritodelmercado from './components/carritodelmercado';
 
 function App() {
   return (
-    <>
+    <Provider store ={store}>
       <div>
-        <Carritodelmercado />
+        {/* <Carritodelmercado /> era pa entender los reducers*/}
+        <Mercadona/>
       </div>
-    </>
+    </Provider>
   );
 }
 
